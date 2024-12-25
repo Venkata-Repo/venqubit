@@ -1,27 +1,116 @@
-/* Basic styles to reset default margin/padding */
-html, body {
-    height: 100%;  /* Ensure body takes full height */
-    margin: 0;  /* Remove default margin */
-    font-family: Arial, sans-serif;  /* Set a default font */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Center content using Flexbox */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  /* Space out header, main, and footer */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Center header and main content */
-header, main, footer {
-    text-align: center;  /* Center text inside the sections */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* Footer at the bottom */
-footer {
-    padding: 10px;
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+button {
     background-color: #333;
-    color: white;
-    font-size: 14px;
-    margin-top: auto;  /* Push footer to the bottom */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero button {
+    margin-top: 20px;
+}
+
+/* Intro Section */
+.intro {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
