@@ -1,0 +1,27 @@
+/* Basic styles to reset default margin/padding */
+html, body {
+    height: 100%;  /* Ensure body takes full height */
+    margin: 0;  /* Remove default margin */
+    font-family: Arial, sans-serif;  /* Set a default font */
+}
+
+/* Center content using Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Space out header, main, and footer */
+}
+
+/* Center header and main content */
+header, main, footer {
+    text-align: center;  /* Center text inside the sections */
+}
+
+/* Footer at the bottom */
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    margin-top: auto;  /* Push footer to the bottom */
+}
